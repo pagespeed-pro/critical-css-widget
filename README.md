@@ -41,7 +41,7 @@ window.extractFullCSS(function(css) {
 
 ### Copy & Paste Instant Extract
 
-The following code will instantly start a Critical CSS download after pasting the code into the browser console and pressing enter.
+The following code will instantly start a Critical CSS download after pasting the code into the browser console.
 
 ```javascript
 (function(d,c,s) {s=d.createElement('script');s.async=true;s.onload=c;s.src='https://cdn.rawgit.com/o10n-x/critical-css-widget/74474ace/critical-css-widget.min.js';d.head.appendChild(s);})(document,function() {
