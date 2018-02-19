@@ -8,7 +8,9 @@ https://gist.github.com/PaulKinlan/6284142
 
 The original snippet uses a Chrome innovation called `getMatchedCSSRules` which is deprecated and will be removed in Chrome 63.
 
-The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules` and it includes a tool to extract the full CSS of a page and to provide the extracted CSS as a file download with annotated file references and information such as the viewport.
+The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules` and it includes a tool to extract the full CSS of a page and to provide the extracted CSS as a file download with annotated file references, information about the viewport, file size and a row index to quickly navigate to the critical CSS from a specific stylesheet.
+
+The critical CSS is also printed in groups in the broser console which enables to extract critical CSS from specific stylesheets.
 
 # Usage
 
