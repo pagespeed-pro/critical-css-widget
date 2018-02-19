@@ -610,7 +610,7 @@
     // use existing client
     if (window.o10n) {
         // extend existing public controller
-        var o10nproto = window.o10n.prototype;
+        var o10nproto = window.o10n.constructor.prototype;
     } else {
         window.o10n = new o10n;
         var o10nproto = o10n.prototype;
