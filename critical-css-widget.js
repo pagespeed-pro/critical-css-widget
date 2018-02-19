@@ -508,7 +508,7 @@
     ));
 
     // public extract Critical CSS method
-    window.extractCriticalCSS = function(callback) {
+    function extractCriticalCSS(callback) {
 
         var cp = new CSSCriticalPath(window, document);
         var result = cp.generateCSS();
@@ -523,7 +523,8 @@
             alert('Your browser does not support javascript based file download. The critical CSS is printed in the console.')
         } else {
 
-            var criticalCSS = "/**\n * Simple Critical CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @viewport " + window.innerWidth + "x" + window.innerHeight + "\n * @size " + humanFileSize(css.length) + "\n *\n * Extracted using the Page Speed Optimization CSS extract widget.\n * @link https://wordpress.org/plugins/above-the-fold-optimization/\n * @source https://github.com/optimalisatie/above-the-fold-optimization/blob/master/admin/js/css-extract-widget.js (.min.js)\n *\n * For professional Critical CSS generators see https://github.com/addyosmani/critical-path-css-tools\n *\n * @sources";
+            var criticalCSS = "/**\n * Simple Critical CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @viewport " + window.innerWidth + "x" + window.innerHeight + "\n * @size " + humanFileSize(css.length) +
+                "\n *\n * Extracted using Critical CSS Widget.\n * @link https://github.com/o10n-x/critical-css-widget\n *\n * For professional Critical CSS generators see https://github.com/addyosmani/critical-path-css-tools\n *\n * @sources";
 
             var hlines = criticalCSS.split(/\r\n|\r|\n/).length;
             hlines += files.length + 3;
@@ -552,7 +553,7 @@
     };
 
     // public extract Full CSS method
-    window.extractFullCSS = function(callback) {
+    function extractFullCSS(callback) {
         var css = CSSSteal();
 
         try {
@@ -577,7 +578,7 @@
             alert('Your browser does not support javascript based file download. The full CSS is printed in the console.')
         } else {
 
-            var fullcss = "/**\n * Full CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @size " + humanFileSize(css.length) + "\n *\n * Extracted using the Page Speed Optimization CSS extract widget.\n * @link https://wordpress.org/plugins/above-the-fold-optimization/\n * @source https://github.com/optimalisatie/above-the-fold-optimization/blob/master/admin/js/css-extract-widget.js (.min.js)\n */\n\n" +
+            var fullcss = "/**\n * Full CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @size " + humanFileSize(css.length) + "\n *\n * Extracted using Critical CSS Widget.\n * @link https://github.com/o10n-x/critical-css-widget\n */\n\n" +
                 css;
 
             if (callback) {
@@ -602,4 +603,26 @@
         var i = Math.floor(Math.log(size) / Math.log(1024));
         return (size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['B', 'kB', 'MB'][i];
     };
+
+    function o10n() {};
+
+    // use existing client
+    if (window.o10n) {
+        // extend existing public controller which could exist when independent modules are loaded with with different client versions
+        var o10nproto = window.o10n.prototype;
+    } else {
+        window.o10n = new o10n;
+        var o10nproto = o10n.prototype;
+    }
+
+    // public extract method
+    // window.o10n.extract(type,callback)
+    o10nproto.extract = function(type, callback) {
+        if (type === 'full') {
+            extractFullCSS(callback);
+        } else {
+            extractCriticalCSS(callback);
+        }
+        return 'Starting extract...';
+    }
 })(window);

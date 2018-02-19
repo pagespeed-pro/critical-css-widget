@@ -1,0 +1,18 @@
+{
+  "name": "critical-css-widget",
+  "version": "1.0.0",
+  "description": "Critical CSS Widget",
+  "author": {
+    "name": "info@optimization.team",
+    "email": "info@optimization.team",
+    "web": "optimization.team"
+  },
+  "engines": {
+    "node": "~0.10"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-closure-compiler": "0.0.21",
+    "matchdep": "latest"
+  }
+}
