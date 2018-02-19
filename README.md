@@ -20,10 +20,10 @@ Copy & paste the widget javascript code directly in the browser console (F12) an
 
 ```javascript
 // file download
-window.extractCriticalCSS();
+o10n.extract();
 
 // callback
-window.extractCriticalCSS(function(css) {
+o10n.extract('critical',function(css) {
   console.log('Extracted critical CSS:',css);
 });
 ```
@@ -32,10 +32,10 @@ window.extractCriticalCSS(function(css) {
 
 ```javascript
 // file download
-window.extractFullCSS();
+o10n.extract('full');
 
 // callback
-window.extractFullCSS(function(css) {
+o10n.extract('full',function(css) {
   console.log('Extracted Full CSS:',css);
 });
 ```
@@ -46,8 +46,8 @@ window.extractFullCSS(function(css) {
 The following code will instantly start a Critical CSS download after pasting the code into the browser console.
 
 ```javascript
-(function(d,c,s) {s=d.createElement('script');s.async=true;s.onload=c;s.src='https://cdn.rawgit.com/o10n-x/critical-css-widget/74474ace/critical-css-widget.min.js';d.head.appendChild(s);})(document,function() {
+(function(d,c,s) {s=d.createElement('script');s.async=true;s.onload=c;s.src='https://cdn.rawgit.com/o10n-x/critical-css-widget/master/critical-css-widget.min.js';d.head.appendChild(s);})(document,function() {
  // critical css file download
-window.extractCriticalCSS();
+o10n.extract();
 });
 ```
