@@ -24,7 +24,7 @@ o10n.extract();
 
 // callback
 o10n.extract('critical',function(css) {
-  console.log('Extracted critical CSS:',css);
+	console.log('Extracted critical CSS:',css);
 });
 ```
 
@@ -36,7 +36,7 @@ o10n.extract('full');
 
 // callback
 o10n.extract('full',function(css) {
-  console.log('Extracted Full CSS:',css);
+	console.log('Extracted Full CSS:',css);
 });
 ```
 
@@ -47,7 +47,7 @@ The following code will instantly start a Critical CSS download after pasting th
 
 ```javascript
 (function(d,c,s) {s=d.createElement('script');s.async=true;s.onload=c;s.src='https://cdn.rawgit.com/o10n-x/critical-css-widget/master/critical-css-widget.min.js';d.head.appendChild(s);})(document,function() {
- // critical css file download
-o10n.extract();
+	// critical css file download
+	o10n.extract();
 });
 ```
