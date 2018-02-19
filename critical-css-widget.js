@@ -604,11 +604,12 @@
         return (size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['B', 'kB', 'MB'][i];
     };
 
+    // public controller
     function o10n() {};
 
     // use existing client
     if (window.o10n) {
-        // extend existing public controller which could exist when independent modules are loaded with with different client versions
+        // extend existing public controller
         var o10nproto = window.o10n.prototype;
     } else {
         window.o10n = new o10n;
