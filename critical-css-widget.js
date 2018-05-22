@@ -186,7 +186,11 @@
 
             a.matches = a.matches || a.webkitMatchesSelector || a.mozMatchesSelector || a.msMatchesSelector || a.oMatchesSelector;
             for (var i in sheets) {
-                var rules = sheets[i].rules || sheets[i].cssRules;
+                try {
+                    var rules = sheets[i].rules || sheets[i].cssRules;
+                } catch (e) {
+                    continue;
+                }
                 for (var r in rules) {
                     selectorText = rules[r].selectorText ? rules[r].selectorText.split(' ').map(function(piece) {
                         return piece ? piece.split(/(:|::)/)[0] : false;
@@ -297,7 +301,11 @@
 
             if (el.nodeType === 1) {
                 while (slen && slen--) {
-                    rules = sheets[slen].cssRules || sheets[slen].rules;
+                    try {
+                        rules = sheets[slen].cssRules || sheets[slen].rules;
+                    } catch (e) {
+                        continue;
+                    }
                     rlen = rules.length;
 
                     while (rlen && rlen--) {
@@ -306,7 +314,11 @@
                             matchedRules.push(rule);
                         } else if (rule instanceof CSSMediaRule) {
                             if (matchMedia(rule)) {
-                                mrules = rule.cssRules || rule.rules;
+                                try {
+                                    mrules = rule.cssRules || rule.rules;
+                                } catch(e) {
+                                    continue;
+                                }
                                 mrlen = mrules.length;
                                 while (mrlen && mrlen--) {
                                     rule = mrules[mrlen];
