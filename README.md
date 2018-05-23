@@ -12,6 +12,8 @@ The Critical CSS Widget is made cross browser using a [polyfill](https://github.
 
 The critical CSS is also printed in groups in the browser console which enables to extract critical CSS from specific stylesheets.
 
+![image](https://user-images.githubusercontent.com/8843669/36543121-1da8cc7e-17e3-11e8-8ed1-a7f69b47757c.png)
+
 # Usage
 
 Copy & paste the widget javascript code directly in the browser console (F12) and use the following methods with an optional callback to extract critical CSS.
