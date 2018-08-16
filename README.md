@@ -12,7 +12,7 @@ The Critical CSS Widget is made cross browser using a [polyfill](https://github.
 
 The critical CSS is also printed in groups in the browser console which enables to extract critical CSS from specific stylesheets.
 
-![image](https://github.com/o10n-x/critical-css-widget/blob/master/critical-css-widget.png)
+![image](https://raw.githubusercontent.com/o10n-x/critical-css-widget/master/critical-css-widget.png?v1)
 
 # Usage
 
