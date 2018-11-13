@@ -1,6 +1,6 @@
 # Critical CSS Widget [DEPRECATED]
 
-**This widget is deprecated and may not work in newer browsers. For an improved widget, see [Style.Tools](https://style.tools/).**
+**This widget is deprecated and may not work in newer browsers. For an improved widget, see [Style.Tools](https://github.com/style-tools/browser-widget).**
 
 Visit https://style.tools/ to install the new widget or copy the folowing widget code in the browser bookmarks link field or console.
 
@@ -17,6 +17,8 @@ Style.Tools provides two Critical CSS extraction solutions:
 
 1) a browser widget (the old widget but improved)
 2) a professional quality Critical CSS extractor based on PostCSS and Penthouse.js.
+
+More info: https://github.com/style-tools/browser-widget
 
 ## About the old widget
 
