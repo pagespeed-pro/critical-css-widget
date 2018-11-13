@@ -2,25 +2,7 @@
 
 **This widget is deprecated and may not work in newer browsers. For an improved widget, see [Style.Tools](https://github.com/style-tools/browser-widget).**
 
-Visit https://style.tools/ to install the new widget or copy the folowing widget code in the browser bookmarks link field or console.
-
-```javascript
-!function(r,a,k,l,f,g,b,m){function n(c,b,d){a.open();b&&(r.onmessage=b);d&&a.addEventListener("securitypolicyviolation",d);a.write(c);a.close()}f="https://style.tools/";g="Style.Tools";var c=a.createElement("script");c.src=f+"x.js";c.onerror=function(){function p(d){if(c=d?d.violatedDirective:0){if("script-src"==c||m)return;m=1;b&&l(b)}if(!q){var h=f+"#"+a.location;a.getElementById("e").innerHTML='<h2 style="color:red;">'+g+(c?' blocked by CSP <font color="blue">'+c+"</font>":" failed to load")+
-'.</h2><h3>Redirecting <a href="'+h+'">'+h+"</a>...</h3>";b=k(function(){a.location.href=h},3E3)}}var q;n("<h2>Loading "+g+" via Service Worker...</h2><iframe src="+f+'go height=50></iframe><p id="e"></p>',function(a){q=1;b&&l(b);n("<script>"+a.data+"\x3c/script>")},p);b=k(p,2E3)};a.head.appendChild(c)}(window,document,setTimeout,clearTimeout);
-```
-
-The Style.Tools editor works best when used from the bookmarks bar. Fetch requests will then be local without the need for a CORS proxy.
-
-Style.Tools is like Dev Tools for CSS optimization. It looks similar and the startup time is instant.
-
-Style.Tools provides two Critical CSS extraction solutions:
-
-1) a browser widget (the old widget but improved)
-2) a professional quality Critical CSS extractor based on PostCSS and Penthouse.js.
-
-More info: https://github.com/style-tools/browser-widget
-
-## About the old widget
+## About
 
 A simple browser widget to extract Critical CSS and Full CSS from a page that can be used via the browser console.
 
