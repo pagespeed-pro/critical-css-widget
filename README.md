@@ -1,6 +1,6 @@
 # Critical CSS Widget [DEPRECATED]
 
-This widget is deprecated. For improved Critical CSS extraction, see [style.tools](https://style.tools/).
+This widget is deprecated. For improved Critical CSS extraction, see **[Style.Tools](https://style.tools/)**.
 
 Visit https://style.tools/ to install the new widget or copy the folowing widget code in the browser bookmarks link field.
 
