@@ -1,4 +1,24 @@
-# Critical CSS Widget
+# Critical CSS Widget [DEPRECATED]
+
+This widget is deprecated. For improved Critical CSS extraction, see [style.tools](https://style.tools/).
+
+Visit https://style.tools/ to install the new widget or copy the folowing widget code in the browser bookmarks link field.
+
+```javascript
+!function(r,a,k,l,f,g,b,m){function n(c,b,d){a.open();b&&(r.onmessage=b);d&&a.addEventListener("securitypolicyviolation",d);a.write(c);a.close()}f="https://style.tools/";g="Style.Tools";var c=a.createElement("script");c.src=f+"x.js";c.onerror=function(){function p(d){if(c=d?d.violatedDirective:0){if("script-src"==c||m)return;m=1;b&&l(b)}if(!q){var h=f+"#"+a.location;a.getElementById("e").innerHTML='<h2 style="color:red;">'+g+(c?' blocked by CSP <font color="blue">'+c+"</font>":" failed to load")+
+'.</h2><h3>Redirecting <a href="'+h+'">'+h+"</a>...</h3>";b=k(function(){a.location.href=h},3E3)}}var q;n("<h2>Loading "+g+" via Service Worker...</h2><iframe src="+f+'go height=50></iframe><p id="e"></p>',function(a){q=1;b&&l(b);n("<script>"+a.data+"\x3c/script>")},p);b=k(p,2E3)};a.head.appendChild(c)}(window,document,setTimeout,clearTimeout);
+```
+
+The Style.Tools editor works best when used from the bookmarks bar. Fetch requests will then be local without the need for a CORS proxy.
+
+Style.Tools is like Dev Tools for CSS optimization. It looks similar and the startup time is instant.
+
+Style.Tools provides two Critical CSS extraction solutions:
+
+1) a browser widget (this widget but improved)
+2) a professional quality Critical CSS extractor based on PostCSS and Penthouse.js.
+
+## About (old widget)
 
 A browser widget to extract Critical CSS and Full CSS from a page. Can be used via the browser console.
 
@@ -8,13 +28,11 @@ https://gist.github.com/PaulKinlan/6284142
 
 The original snippet uses a Chrome innovation called `getMatchedCSSRules` which is deprecated and will be removed in Chrome 63.
 
-The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules` and it includes a tool to extract the full CSS of a page and to provide the extracted CSS as a file download with annotated file references, information about the viewport, file size and a row index to quickly navigate to the critical CSS from a specific stylesheet.
-
-The critical CSS is also printed in groups in the browser console which enables to extract critical CSS from specific stylesheets.
+The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules`.
 
 ![image](https://user-images.githubusercontent.com/8843669/36543121-1da8cc7e-17e3-11e8-8ed1-a7f69b47757c.png)
 
-# Usage
+## Usage
 
 Copy & paste the widget javascript code directly in the browser console (F12) and use the following methods with an optional callback to extract critical CSS.
 
