@@ -30,7 +30,7 @@ The original snippet uses a Chrome innovation called `getMatchedCSSRules` which 
 
 The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules`.
 
-![image](https://user-images.githubusercontent.com/8843669/36543121-1da8cc7e-17e3-11e8-8ed1-a7f69b47757c.png)
+![image](https://raw.githubusercontent.com/o10n-x/critical-css-widget/master/critical-css-widget.png?v1)
 
 ## Usage
 
