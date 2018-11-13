@@ -26,9 +26,7 @@ The widget is based on a concept by Paul Kinlan, head of Chrome webdeveloper rel
 
 https://gist.github.com/PaulKinlan/6284142
 
-The original snippet uses a Chrome innovation called `getMatchedCSSRules` which is deprecated and will be removed in Chrome 63.
-
-The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules`.
+The snippet uses a Chrome innovation called `getMatchedCSSRules` which is deprecated and will be removed in Chrome 63. The Critical CSS Widget is made cross browser using a [polyfill](https://github.com/ovaldi/getMatchedCSSRules) for `getMatchedCSSRules`.
 
 ![image](https://raw.githubusercontent.com/o10n-x/critical-css-widget/master/critical-css-widget.png?v1)
 
