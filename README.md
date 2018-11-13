@@ -15,7 +15,7 @@ Style.Tools is like Dev Tools for CSS optimization. It looks similar and the sta
 
 Style.Tools provides two Critical CSS extraction solutions:
 
-1) a browser widget (this widget but improved)
+1) a browser widget (the old widget but improved)
 2) a professional quality Critical CSS extractor based on PostCSS and Penthouse.js.
 
 ## About the old widget
