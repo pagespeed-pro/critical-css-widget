@@ -2,7 +2,7 @@
 
 **This widget is deprecated and may not work in newer browsers.**
 
-For an improved widget, see [📐 Style.Tools](https://github.com/style-tools/browser-widget) - _Dev Tools for CSS Optimization_.
+For an improved widget, see [📐 Style.Tools - Dev Tools for CSS Optimization](https://github.com/style-tools/browser-widget).
 
 ## About
 
