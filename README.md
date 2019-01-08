@@ -6,6 +6,8 @@ For an improved widget, see [📐 Style.Tools - Dev Tools for CSS Optimization](
 
 We have created a custom Critical CSS Generator based on [PostCSS](https://github.com/postcss/postcss) that can provide a better result than [Penthouse.js](https://github.com/pocketjoso/penthouse). It supports multiple viewports which enables to extract pixel perfect critical CSS for a responsive design with a single click.
 
+The tool also provides a PostCSS based unused CSS remover that can automatically remove the Critical CSS so that duplicate CSS is removed.
+
 ![image](https://user-images.githubusercontent.com/8843669/50854430-4aeaf100-1385-11e9-8f96-7d05619ed10a.png)
 
 ## About
