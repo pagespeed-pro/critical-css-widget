@@ -1,6 +1,6 @@
 # Critical CSS Widget [DEPRECATED]
 
-**This widget is deprecated and may not work in newer browsers. For an improved widget, see [Style.Tools](https://github.com/style-tools/browser-widget).**
+**This widget is deprecated and may not work in newer browsers. For an improved widget, see [📐 Style.Tools](https://github.com/style-tools/browser-widget). - Dev Tools for CSS Optimization**
 
 ## About
 
