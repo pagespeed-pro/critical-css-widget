@@ -1,2 +1,2 @@
-window.o10n.extract;
-window.o10n.prototype.extract;
+window.critical.extract;
+window.critical.prototype.extract;
