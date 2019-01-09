@@ -6,6 +6,8 @@ For an improved widget, see [📐 Style.Tools](https://github.com/style-tools/br
 
 ![image](https://user-images.githubusercontent.com/8843669/50854430-4aeaf100-1385-11e9-8f96-7d05619ed10a.png)
 
+---
+
 ## About
 
 A simple browser widget to extract Critical CSS and Full CSS from a page that can be used via the browser console.
