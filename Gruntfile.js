@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
         'closure-compiler': {
             "build": {
-                closurePath: '../../src/closure-compiler/',
+                closurePath: '../closure-compiler/',
                 js: 'critical-css-widget.js',
                 jsOutputFile: './critical-css-widget.min.js',
                 noreport: true,

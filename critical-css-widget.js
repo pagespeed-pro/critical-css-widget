@@ -1,6 +1,6 @@
 /** 
  * Critical CSS Widget
- * @link https://github.com/o10n-x/critical-css-widget
+ * @link https://github.com/style-tools/critical-css-widget
  */
 (function(window) {
 
@@ -114,7 +114,7 @@
                     }
                 }
                 finalCSS += "\n */\n";
-                for (k in css[file].css) {
+                for (var k in css[file].css) {
 
                     cssRule = k + " { ";
                     for (var j in css[file].css[k]) {
@@ -316,7 +316,7 @@
                             if (matchMedia(rule)) {
                                 try {
                                     mrules = rule.cssRules || rule.rules;
-                                } catch(e) {
+                                } catch (e) {
                                     continue;
                                 }
                                 mrlen = mrules.length;
@@ -536,7 +536,7 @@
         } else {
 
             var criticalCSS = "/**\n * Simple Critical CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @viewport " + window.innerWidth + "x" + window.innerHeight + "\n * @size " + humanFileSize(css.length) +
-                "\n *\n * Extracted using Critical CSS Widget.\n * @link https://github.com/o10n-x/critical-css-widget\n *\n * For professional Critical CSS generators see https://github.com/addyosmani/critical-path-css-tools\n *\n * @sources";
+                "\n *\n * Extracted using Critical CSS Widget.\n * @link https://github.com/critical-x/critical-css-widget\n *\n * For professional Critical CSS generators see https://github.com/addyosmani/critical-path-css-tools\n *\n * @sources";
 
             var hlines = criticalCSS.split(/\r\n|\r|\n/).length;
             hlines += files.length + 3;
@@ -590,7 +590,7 @@
             alert('Your browser does not support javascript based file download. The full CSS is printed in the console.')
         } else {
 
-            var fullcss = "/**\n * Full CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @size " + humanFileSize(css.length) + "\n *\n * Extracted using Critical CSS Widget.\n * @link https://github.com/o10n-x/critical-css-widget\n */\n\n" +
+            var fullcss = "/**\n * Full CSS\n *\n * @url " + document.location.href + "\n * @title " + document.title + "\n * @size " + humanFileSize(css.length) + "\n *\n * Extracted using Critical CSS Widget.\n * @link https://github.com/critical-x/critical-css-widget\n */\n\n" +
                 css;
 
             if (callback) {
@@ -617,20 +617,20 @@
     };
 
     // public controller
-    function o10n() {};
+    function critical() {};
 
     // use existing client
-    if (window.o10n) {
+    if (window.critical) {
         // extend existing public controller
-        var o10nproto = window.o10n.constructor.prototype;
+        var criticalproto = window.critical.constructor.prototype;
     } else {
-        window.o10n = new o10n;
-        var o10nproto = o10n.prototype;
+        window.critical = new critical;
+        var criticalproto = critical.prototype;
     }
 
     // public extract method
-    // window.o10n.extract(type,callback)
-    o10nproto.extract = function(type, callback) {
+    // window.critical.extract(type,callback)
+    criticalproto.extract = function(type, callback) {
         if (type === 'full') {
             extractFullCSS(callback);
         } else {
