@@ -55,3 +55,7 @@ The following code will instantly start a Critical CSS download after pasting th
    critical.extract();
 });
 ```
+
+The snippet uses [raw.githack.com](https://raw.githack.com/). You can also directly copy the code from Github and insert it in the browser console:
+
+https://github.com/style-tools/critical-css-widget/blob/master/critical-css-widget.min.js
