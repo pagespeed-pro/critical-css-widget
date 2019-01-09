@@ -50,7 +50,7 @@ critical.extract('full',function(css) {
 The following code will instantly start a Critical CSS download after pasting the code into the browser console.
 
 ```javascript
-(function(d,c,s) {s=d.createElement('script');s.async=true;s.onload=c;s.src='https://cdn.rawgit.com/style-tools/critical-css-widget/master/critical-css-widget.min.js';d.head.appendChild(s);})(document,function() {
+(function(d,c,s) {s=d.createElement('script');s.async=true;s.onload=c;s.src='https://raw.githack.com/style-tools/critical-css-widget/master/critical-css-widget.min.js';d.head.appendChild(s);})(document,function() {
    // critical css file download
    critical.extract();
 });
