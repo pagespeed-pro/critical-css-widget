@@ -2,9 +2,12 @@
 
 **This widget is deprecated and may not work in newer browsers.**
 
-For an improved widget, see [📐 Style.Tools](https://github.com/style-tools/browser-widget).
+For a free frontend optimization (FEO) widget, see https://style.tools/.
 
-![image](https://user-images.githubusercontent.com/8843669/50854430-4aeaf100-1385-11e9-8f96-7d05619ed10a.png)
+- critical CSS generator (advanced)
+- unused CSS remover
+- duplicate CSS remover
+- works offline and for pages behind a login, e.g. Google Analytics UI
 
 ---
 
