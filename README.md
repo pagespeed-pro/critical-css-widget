@@ -2,12 +2,7 @@
 
 **This widget is deprecated and may not work in newer browsers.**
 
-For a free frontend optimization (FEO) widget, see https://style.tools/.
-
-- critical CSS generator (advanced)
-- unused CSS remover
-- duplicate CSS remover
-- works offline and for pages behind a login, e.g. Google Analytics UI
+Use our new widget: [https://github.com/pagespeed-pro/widget](https://github.com/pagespeed-pro/widget).
 
 ---
 
@@ -48,7 +43,6 @@ critical.extract('full',function(css) {
    console.log('Extracted Full CSS:',css);
 });
 ```
-
 
 ### Copy & Paste Instant Extract
 
